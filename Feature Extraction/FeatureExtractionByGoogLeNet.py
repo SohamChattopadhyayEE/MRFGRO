@@ -303,7 +303,7 @@ import csv
 labels=[]
 for i in range(len(temp[0].tolist()[0])):
   labels.append("GoogLeNet"+str(i+1))
-with open ("/content/drive/MyDrive/Sars-cov-2/GoogLeNet_68%.csv",'w+',newline='') as file:
+with open ("/content/drive/MyDrive/Sars-cov-2/GoogLeNet.csv",'w+',newline='') as file:
   writer=csv.writer(file)
   writer.writerow(labels)
   for i in range(len(temp)):
